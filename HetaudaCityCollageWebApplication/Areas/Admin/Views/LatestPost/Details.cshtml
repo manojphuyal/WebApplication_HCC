@@ -1,0 +1,43 @@
+﻿@model HetaudaCityCollageWebApplication.Models.LatestPostModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>LatestPostModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Heading1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Heading1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Heading2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Heading2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageURL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ImageURL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
